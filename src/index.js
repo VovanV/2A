@@ -10,7 +10,7 @@ app.get('/task2A', (req, res) => {
         const a = (((+inputA) && typeof (+inputA) === 'number')? (+inputA):0);
         const b = (((+inputB) && typeof (+inputB) === 'number')? (+inputB):0);
         const result = a + b;
-        res.send('Вывод: '+String(result));
+        res.send(String(result));
     }
     catch(e){
 
